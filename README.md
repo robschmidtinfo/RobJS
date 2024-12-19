@@ -70,13 +70,6 @@ app.route('/about', 'about');
 app.navigate('/home');
 ```
 5. You can create a folder structure in your project with folders views and components to keep things organized (but you don't need to)
-- **your_project**
-  - **index.html**
-  - **RobJS.js**
-  - **app.js**
-  - **/components**
-  - **/views**
-
 6. To create a first component, start with something simple like this Header component
 ```js
 // ./components/Header.js
