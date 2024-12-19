@@ -21,7 +21,7 @@ For *small projects*, RobJS can be used right as it is. Download, plug in and of
 For *bigger projects* (where performance starts to play a role), RobJS-Unfolded is recommended to give you all the freedom you need to make your app blazing fast. 
 
 ## Usage
-1. Download this RobJS from this repository and place the file RobJS.js somewhere in your project folder.
+1. Download this repository and place the file RobJS.js somewhere in your project folder.
 
 2. Start with a usual HTML-file where you define a div-Tag with an id of your choice.
 Add a script-tag pointing to a JavaScript-file in your project folder. Name it as you like.
@@ -44,7 +44,7 @@ Add a script-tag pointing to a JavaScript-file in your project folder. Name it a
 ```
 
 3. Create the JavaScript file according to your script tag. In this case we call it app.js
-4. Initialize the app, define state variables (name, initial value), views and routes like shown below
+4. In app.js, initialize the app, define state variables, views and routes like shown below
 ```js
 // app.js
 import { RobJS } from "./RobJS.js";
@@ -54,7 +54,7 @@ import { About } from "./views/about.js";
 const app = new RobJS('myapp'); // your tag id
 app.init(app)
 
-// Define state variables 
+// Define state variables (name, initial value)
 app.defineStateVar('count', 0);
 app.defineStateVar('data', []);
   
@@ -70,6 +70,12 @@ app.route('/about', 'about');
 app.navigate('/home');
 ```
 5. You can create a folder structure in your project with folders views and components to keep things organized (but you don't need to)
+- **your_project**
+  - **index.html**
+  - **RobJS.js**
+  - **app.js**
+  - **/components**
+  - **/views**
 
 6. To create a first component, start with something simple like this Header component
 ```js
