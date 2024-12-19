@@ -1,6 +1,6 @@
 # RobJS
 RobJS is probably the simplest JavaScript Frontend Framework that is out there.<br /> 
-It is all done in just one single line of code! ( ...a quite long one though ;) )
+It is all done in just one single line of code! ...a quite long one though ;)
 
 But that doesn't mean, it can't do much...<br />
 It offers a similar developer experience like f.e. React.js as it mimics
