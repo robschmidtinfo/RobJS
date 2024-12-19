@@ -11,13 +11,13 @@ core features like:
 
 The best thing though is, that it is super lightweight and can be plugged in literaly everywhere (and even multiple times) in your project. No packaging managers or other bells and whistles needed.
 
-Further is there no obligation to learn a new language.<br /> 
+Further there is no obligation to learn a new language.<br /> 
 You know HTML, CSS and JavaScript -> **You know RobJS**.
 
 Because it is build very closely to vanilla JavaScript, you get back full control over it. 
 Nothing is hidden behind the scenes, it is fairly easy to understand and you can fully customize this framework to your own needs. (RobJS-Unfolded recommended)
 
-For <ins>Small Projects</ins>, RobJS can be used right as it is. Download, plug in and off you go.<br /><br /> 
-For <ins>Bigger Projects</ins> (where performance starts to play a role), RobJS-Unfolded is recommended to give you all the freedom you need to make your app blazing fast. 
+For *small projects*, RobJS can be used right as it is. Download, plug in and off you go.<br /><br /> 
+For *bigger projects* (where performance starts to play a role), RobJS-Unfolded is recommended to give you all the freedom you need to make your app blazing fast. 
 
 
