@@ -21,7 +21,7 @@ Nothing is hidden behind the scenes. For a seasoned developer, it is fairly easy
 ## Usage
 1. Download this repository and place the file RobJS.js somewhere in your project folder.
 
-2. Start with a usual HTML-file where you define a div-Tag with an id of your choice.
+2. Start with a usual index.html-file where you define a div-Tag with an id of your choice.
 Add a script-tag pointing to a JavaScript-file in your project folder. Name it as you like.
 
 ```html
@@ -41,8 +41,8 @@ Add a script-tag pointing to a JavaScript-file in your project folder. Name it a
 </html>
 ```
 
-3. Create the JavaScript file according to your script tag. In this case we call it app.js
-4. In app.js, initialize the app, define state variables, views and routes like shown below
+3. Create the JavaScript file according to your script tag. In this case we call it app.js.
+4. In app.js, initialize the app, define state variables, views and routes like shown below.
 ```js
 // app.js
 import { RobJS } from "./RobJS.js";
@@ -67,22 +67,22 @@ app.route('/about', 'about');
 // Start at home
 app.navigate('/home');
 ```
-5. You can create a folder structure in your project with folders views and components to keep things organized (but you don't need to)
-6. To create a first component, start with something simple like this Header component
+5. You can create a folder structure in your project with the folders: "views" and "components" to keep things organized (but you don't need to).
+6. To create a first component, start with something simple like this Header component.
 ```js
 // ./components/Header.js
 export const Header = () => `
   <p>Header Component (with state, count: <span style="color:red">${app.state.count}</span>)</p>
 `;
 ```
-7. And even simpler maybe a Footer
+7. And even simpler maybe a Footer.
 ```js
 // ./components/Footer.js
 export const Footer = () => `
   <p>Footer Component</p>
 `;
 ```
-8. Now you can plug these components into your first view that we name Home.js in this case
+8. Now you can plug these components into your first view that we name Home.js in this case.
 ```js
 // ./views/Home.js
 import { Footer } from "../components/Footer.js";
@@ -123,7 +123,7 @@ export const About = () => {
         try {
           const response = await fetch('https://jsonplaceholder.typicode.com/posts');
           const data = await response.json();
-          // 100 comes back but for this example I want only 10
+          // 100 comes back but for this example we take a 10th
           const limitedData = data.length / 10;
           app.updateState({ 'count': limitedData });
         } catch (error) {
@@ -157,5 +157,5 @@ export const About = () => {
     `;
   };
 ```
-10. That's it. Your done. Try it out in the browser.
-11. To see an example of a fully functional CRUD frontend app, take a look at [Simple Todo App made with RobJS](https://github.com/robschmidtinfo/simple-todo-app-made-with-robjs?)
+10. Done. Try it out by opening the index.html-file with your browser.
+11. To see an example of a fully functional CRUD frontend app, take a look at [Simple Todo App made with RobJS](https://github.com/robschmidtinfo/simple-todo-app-made-with-robjs?).
