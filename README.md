@@ -51,7 +51,7 @@ import { Home } from "./views/home.js";
 import { About } from "./views/about.js";
 
 const app = new RobJS('myapp'); // your tag id
-app.init(app)
+app.init('app') // pass same name as your app variable as argument
 
 // Define state variables (name, initial value)
 app.defineStateVar('count', 0);
