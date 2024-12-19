@@ -23,8 +23,8 @@ For *bigger projects* (where performance starts to play a role), RobJS-Unfolded 
 ## Usage
 1. Download this RobJS from this repository and place the file RobJS.js somewhere in your project folder.
 
-2. Start with a usual html-file where you define a div with an id of your choice.
-Add a script-tag pointing to a js-file in your project folder. Name it as you like.
+2. Start with a usual HTML-file where you define a div-Tag with an id of your choice.
+Add a script-tag pointing to a JavaScript-file in your project folder. Name it as you like.
 
 ```html
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ Add a script-tag pointing to a js-file in your project folder. Name it as you li
 </html>
 ```
 
-3. Create the js-file accordingly.
+3. Create the JavaScript file according to your script tag. In this case we call it app.js
 4. Initialize the app, define state variables (name, initial value), views and routes like shown below
 ```js
 // app.js
@@ -71,7 +71,7 @@ app.navigate('/home');
 ```
 5. You can create a folder structure in your project with folders views and components to keep things organized (but you don't need to)
 
-6. To create a first component, start with something simple like this.
+6. To create a first component, start with something simple like this Header component
 ```js
 // ./components/Header.js
 export const Header = () => `
@@ -85,7 +85,7 @@ export const Footer = () => `
   <p>Footer Component</p>
 `;
 ```
-8. Now you can plug these components into your first view that we name Home.js in this case.
+8. Now you can plug these components into your first view that we name Home.js in this case
 ```js
 // ./views/Home.js
 import { Footer } from "../components/Footer.js";
@@ -160,5 +160,5 @@ export const About = () => {
     `;
   };
 ```
-10. That's it. Your done. Easy, right? <br />
+10. That's it. Your done. Try it out in the browser.<br />
 To see an example of a fully functional CRUD frontend app, take a look at ***simple todo app made with robjs***
