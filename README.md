@@ -1,16 +1,17 @@
 # RobJS
 RobJS is probably the simplest JavaScript Frontend Framework that is out there.<br /> 
-It is all done in just one single line of code! ...a quite long one though ;)
+It is all done in just one single line of code!
 
-But that doesn't mean, it can't do much...<br />
+But that doesn't mean, it can't do much.<br />
 It offers a similar developer experience like f.e. React.js as it mimics
 core features like: 
 - Statemanagement
 - Functional Components
 - plus extra navigation capabilities to make it a breeze building f.e. a menu
-- plus keeps Vanilla JavaScript, where it is straightforward, f.e. in forms (unline React.js)
+- plus keeps Vanilla JavaScript, where it is straightforward, f.e. in forms (unlike React.js)
+- even solves SEO problematic if you compose your app also with static html
 
-But the best thing is, that it is super lightweight and can be plugged in literaly everywhere (and even multiple times) in your project. No packaging managers or other bells and whistles needed.
+But the best thing is, that it is super lightweight and can be plugged in literaly everywhere (and even *multiple* times - with or without shared state!) in your project. No packaging manager or other bells and whistles needed.
 
 Further there is no obligation to learn a new language.<br /> 
 You know HTML, CSS and JavaScript? -> **You know RobJS**.
@@ -34,7 +35,7 @@ Add a script-tag pointing to a JavaScript-file in your project folder. Name it a
 </head>
 <body>
     <h1>RobJS</h1>
-    <p>Some static html that stays unaffected ...</p>
+    <p>Some static html that stays unaffected and can help SEO...</p>
     <div id="myapp"></div>
     <script type="module" src="app.js"></script>
 </body>
