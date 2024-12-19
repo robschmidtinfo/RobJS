@@ -15,8 +15,8 @@ But the best thing is, that it is super lightweight and can be plugged in litera
 Further there is no obligation to learn a new language.<br /> 
 You know HTML, CSS and JavaScript? -> **You know RobJS**.
 
-Because it is build very closely to vanilla JavaScript, you get back full control over it. 
-Nothing is hidden behind the scenes. For a seasoned developer, it is fairly easy to understand and you can fully customize or extend this framework to your own needs.
+Because it is build very closely to Vanilla JavaScript, you get back full control over it. 
+Nothing is hidden behind the scenes. For a seasoned developer, it is fairly easy to understand and you can fully customize or extend this framework to your own needs, building projects as small or big as you want.
 
 ## Usage
 1. Download this repository and place the file RobJS.js somewhere in your project folder.
@@ -157,5 +157,5 @@ export const About = () => {
     `;
   };
 ```
-10. That's it. Your done. Try it out in the browser.<br />
-To see an example of a fully functional CRUD frontend app, take a look at ***simple todo app made with robjs***
+10. That's it. Your done. Try it out in the browser.
+11. To see an example of a fully functional CRUD frontend app, take a look at [Simple Todo App made with RobJS](https://github.com/robschmidtinfo/simple-todo-app-made-with-robjs?)
