@@ -2,10 +2,14 @@
 **"The Minimalists JavaScript Framework"**<br /><br /> 
 RobJS is a lightweight (less than 30 lines of code, ~1kB) JavaScript framework designed for developers who value simplicity, speed and control. Built to keep the essence of modern UI development without unnecessary complexity, RobJS empowers you to:<br /><br /> 
 
-- **Define Views and Components with Ease:** Create modular, reusable components and compose dynamic views effortlessly with a *react-ish* developer experience.
-- **State-Driven Rendering:** Automatically update only the parts of your UI that need it, optimizing performance.
-- **Stay in Control:** No virtual DOM. No bloated libraries. Just plain, efficient JavaScript.
-- **Extensible by Design:** Add your custom logic and extend functionality with no setup.<br /><br /> 
+- **Define Views and Components with Ease:** <br /> 
+Create modular, reusable components and compose dynamic views effortlessly with a *react-ish* developer experience.
+- **State-Driven Rendering:** <br /> 
+Automatically update only the parts of your UI that need it, optimizing performance.
+- **Stay in Control:** <br /> 
+No virtual DOM. No bloated libraries. Just plain, efficient JavaScript.
+- **Extensible by Design:** <br /> 
+Add your custom logic and extend functionality with no setup.<br /><br /> 
 
 Whether you’re prototyping a quick idea or crafting a focused application, RobJS gives you the tools to move fast, with minimal overhead, and maximum clarity.
 
