@@ -1,23 +1,13 @@
 # RobJS
-RobJS is probably the simplest JavaScript Frontend Framework that is out there.<br /> 
-It is all done in less than 30 lines of code!
+**"The Minimalists JavaScript Framework"**<br /> 
+RobJS is a lightweight (less than 30 lines of code, ~1kB) JavaScript framework designed for developers who value simplicity, speed and control. Built to keep the essence of modern UI development without unnecessary complexity, RobJS empowers you to:<br /><br /> 
 
-But that doesn't mean, it can't do much.<br />
-It offers a similar developer experience like f.e. React.js as it mimics
-core features like
-- Reactive rendering through Statemanagement
-- Functional Components
-- plus keeps Vanilla JavaScript, where it is straightforward, f.e. in forms (unlike React.js)
+- **Define Views and Components with Ease:** Create modular, reusable components and compose dynamic views effortlessly.
+- **State-Driven Rendering:** Automatically update only the parts of your UI that need it, optimizing performance.
+- **Stay in Control:** No virtual DOM. No bloated libraries. Just plain, efficient JavaScript.
+- **Extensible by Design:** Add your custom logic and extend functionality with no setup.<br /><br /> 
 
-But the best thing is, that it is super lightweight (~1kB) and can be plugged in literaly everywhere (and even *multiple* times) in your project. No packaging manager or other bells and whistles needed.
-
-Further there is no obligation to learn a new language.<br /> 
-You know HTML, CSS and JavaScript? -> **You know RobJS**.
-
-## Why is it special?<br/>
-The charme of it lies in the fact that it is build as close as possible to Vanilla JavaScript - on purpose.<br/> 
-**So you get back full control over it as nothing is hidden behind the scenes!**<br/> 
-For a seasoned developer, it is fairly easy to understand and you can fully customize or extend this framework to your own needs, building projects as small or big as you want.
+Whether you’re prototyping a quick idea or crafting a focused application, RobJS gives you the tools to move fast, with minimal overhead, and maximum clarity.
 
 ## Usage
 1. Download this repository and place the file Rob.js somewhere in your project folder.
