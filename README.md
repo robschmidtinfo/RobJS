@@ -47,7 +47,9 @@ app.init('app') // pass same name as your app variable as argument
 // Define a state variable, pass a name and initial value
 app.defineStateVar('count', 0);
 
-// define a component as a function (recommend: do this in a separate file and import it)
+// Define a component as a function (recommend: do this in a separate file and import it)
+// The component should update automatically when the state changes 
+// -> Therefore you must wrap the returning html in a div and give it a classname
 const Counter = () => {
 
     return `
@@ -59,10 +61,10 @@ const Counter = () => {
     `
 }
 
-// Register the component, pass the component function, the classname and an array of state variables it listens to)
+// Register the component, pass the component function, the classname and an array of state variables it listens to
 app.defineComponent(Counter, 'Counter', ['count'])
 
-// start your app with an initial render of the component
+// Start your app with an initial render of the component
 app.render(Counter)
 ```
 
