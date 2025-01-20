@@ -1,4 +1,4 @@
-export class Rob {
+export class RobJSApp {
     constructor(tagId) {
       this.tagId = tagId
       this.state = {};
@@ -9,8 +9,6 @@ export class Rob {
     init(app){ window[app] = this }
 
     defineStateVar(key, initialValue) { this.state[key] = initialValue }
-
-    defineFunction(name, fn) { this[name] ? console.error(`Function "${name}" is already defined.`) : this[name] = fn }
 
     defineComponent(viewFunction, className, usedStateKeys) { this.components.push({viewFunction, className, usedStateKeys}) }
 
