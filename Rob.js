@@ -1,9 +1,9 @@
 export class RobJSApp {
     constructor(tagId) {
       this.tagId = tagId
-      this.state = {};
-      this.oldState = {};
-      this.components = [];
+      this.state = {}
+      this.oldState = {}
+      this.components = []
     }
 
     init(app){ window[app] = this }
@@ -18,8 +18,8 @@ export class RobJSApp {
     render(viewFunction) { document.getElementById(this.tagId).innerHTML = viewFunction() }
     
     updateState(key, newValue) {
-      this.oldState = this.state;
-      this.state = { ...this.state, [key]: newValue };
+      this.oldState = this.state
+      this.state = { ...this.state, [key]: newValue }
       this.components
           .filter(comp => comp.usedStateKeys.includes(key))
           .forEach(comp =>

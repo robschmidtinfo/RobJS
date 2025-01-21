@@ -39,13 +39,13 @@ Add a script-tag pointing to a JavaScript-file in your project folder. Name it a
 4. In app.js, initialize the app, define state variables, components and render the initial view like shown below.
 ```js
 // app.js
-import { RobJSApp } from "../../Rob.js";
+import { RobJSApp } from "../../Rob.js"
 
-const app = new RobJSApp('myapp'); // your tag id
+const app = new RobJSApp('myapp') // pass your tag id
 app.init('app') // pass same name as your app variable as argument
 
 // Define a state variable, pass a name and initial value
-app.defineStateVar('count', 0);
+app.defineStateVar('count', 0)
 
 // Define a component as a function (recommend: do this in a separate file and import it)
 // The component should update automatically when the state changes 
