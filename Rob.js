@@ -8,7 +8,10 @@ export class RobJSApp {
 
     init(app){ window[app] = this }
 
-    defineStateVar(key, initialValue) { this.state[key] = initialValue }
+    defineStateVar(key, initialValue) { 
+      this.state[key] = initialValue 
+      this.oldState[key] = initialValue 
+    }
 
     registerComponent(viewFunction, className, usedStateKeys) { this.components.push({viewFunction, className, usedStateKeys}) }
 
