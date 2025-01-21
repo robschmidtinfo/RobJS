@@ -10,7 +10,7 @@ export class RobJSApp {
 
     defineStateVar(key, initialValue) { this.state[key] = initialValue }
 
-    defineComponent(viewFunction, className, usedStateKeys) { this.components.push({viewFunction, className, usedStateKeys}) }
+    registerComponent(viewFunction, className, usedStateKeys) { this.components.push({viewFunction, className, usedStateKeys}) }
 
     render(viewFunction) { document.getElementById(this.tagId).innerHTML = viewFunction() }
     

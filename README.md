@@ -52,6 +52,8 @@ app.defineStateVar('count', 0);
 // -> Therefore you must wrap the returning html in a div and give it a classname
 const Counter = () => {
 
+    console.log(app.oldState.count) // the old state is available, too
+    
     return `
       <div class="Counter"> 
         <button onclick="app.updateState('count', app.state.count - 1)">-</button>
@@ -62,7 +64,7 @@ const Counter = () => {
 }
 
 // Register the component, pass the component function, the classname and an array of state variables it listens to
-app.defineComponent(Counter, 'Counter', ['count'])
+app.registerComponent(Counter, 'Counter', ['count'])
 
 // Start your app with an initial render of the component
 app.render(Counter)
