@@ -47,13 +47,10 @@ app.init('app') // pass same name as your app variable as argument
 // Define a state variable, pass a name and initial value
 app.defineStateVar('count', 0)
 
-// Define a component as a function (recommend: do this in a separate file and import it)
+// Define a component as a normal JavaScript function that returns an html string (recommend: do this in a separate file and import it)
 // The component should update automatically when the state changes 
 // -> Therefore you must wrap the returning html in a div and give it a classname
 const Counter = () => {
-
-    console.log(app.oldState.count) // the old state is available, too
-    
     return `
       <div class="Counter"> 
         <button onclick="app.updateState('count', app.state.count - 1)">-</button>
@@ -70,6 +67,7 @@ app.registerComponent(Counter, 'Counter', ['count'])
 app.render(Counter)
 ```
 
-5. Done. Try it out by opening the index.html-file with your browser.
-6. To see more examples like building a menu, getting data from an API, conditional rendering etc. go to [Examples](https://robjs.org/examples.html).
-7. To see an example of a fully functional CRUD frontend app, take a look at [Simple Todo App made with RobJS](https://github.com/robschmidtinfo/simple-todo-app-made-with-robjs).
+5. Done. Try it out by opening the index.html-file with your browser or go [here](https://robjs.org/getstarted.html).
+6. We learned how to set up a project, create and change a state variable, create a component and render it initially.
+7. To see further demonstrations like building a menu, getting data from an API, conditional rendering etc. check out [Examples](https://robjs.org).
+8. To see an example of a fully functional CRUD frontend app, take a look at [Simple Todo App made with RobJS](https://github.com/robschmidtinfo/simple-todo-app-made-with-robjs).
