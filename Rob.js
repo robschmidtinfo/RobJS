@@ -13,18 +13,29 @@ export class RobJSApp {
       this.oldState[key] = initialValue 
     }
 
-    registerComponent(viewFunction, className, usedStateKeys) { this.components.push({viewFunction, className, usedStateKeys}) }
+    registerComponent(viewFunction, id, usedStateKeys, ...args) { this.components.push({viewFunction, id, usedStateKeys, args}) }
 
-    render(viewFunction) { document.getElementById(this.tagId).innerHTML = viewFunction() }
+    initialRender(viewFunction, id=undefined) { 
+      document.getElementById(this.tagId).innerHTML = viewFunction(id)
+      this.components.forEach(component => this.updateComponent(component))
+    }
+
+    updateComponent(component){
+      const el = document.getElementById(component.id)
+      const tempDiv = document.createElement("div")
+      const stateArgs = component.usedStateKeys.map(key => this.state[key])
+      tempDiv.innerHTML = component.viewFunction(component.id, ...component.args, ...stateArgs)
+      const newElement = tempDiv.firstElementChild
+      el.replaceWith(newElement)
+    }
     
     updateState(key, newValue) {
       this.oldState = this.state
       this.state = { ...this.state, [key]: newValue }
       this.components
-          .filter(comp => comp.usedStateKeys.includes(key))
-          .forEach(comp =>
-              document.querySelectorAll(`.${comp.className}`)
-                  .forEach(el => el.innerHTML = comp.viewFunction())
-          );
+        .filter(component => component.usedStateKeys.includes(key))
+        .forEach(component => {
+          this.updateComponent(component)
+        });
     }
 }
